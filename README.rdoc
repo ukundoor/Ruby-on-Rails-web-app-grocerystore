@@ -1,28 +1,61 @@
-== README
+Given you are the owner of a grocery store, create a basic Rails application that satisfies the following user stories:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. As the owner, I need to maintain a list of grocery categories (CRUD Operations). 
+Name – Must not have spaces and should be less than 35 characters; Value is required and unique
+Description – Value is required	
+(Example: Diary, Vegetables, Bakery, Pharmacy, Meat, Chips, Cookies, Spices, Gifts and etc)
 
-Things you may want to cover:
+2. As the owner, I should be able to add my inventory and categorize it. A grocery product can belong to only one category.
+Name – Value is required and unique; Should be less than 20 characters;
+Description – Value is required
+Price – Value is required and can have upto two decimals. ($20.99, $19.99)
+ (Example:  
+Milk, Yogurt – Diary
+Cilantro, Carrot, Potatoes – Vegetables)
+	       
+3.  If I go to categories list I should be able to see the total list of products added to that category.
+Example: 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+CATEGORY	COUNT
+Books	1
+Magazines	3
+Notebooks	1
+Paper pads	1
+Pens	3
+Pencils	2
+Highlighter	2 colors
+Scissors	1 pair
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+4. Also I should have page to look at all my inventory in one page
+CATEGORY	PRODUCTS
+Dairy	Milk
+Yogurt
+Vegetables	Carrot
+Cilantro
+Potatoes
+Basil
+Meat	Chicken
+Shrimp
+Crab
+Fish
+
+
+5. Track all cashiers who works for you in your grocery store.
+Name – Required
+Username – Required and unique
+Start Date - Required
+End Date – Default null which means the cashier is still working. If end date is given then the cashier no longer works in the store.
+DOB – Required
+Age – Show age in the Cashiers page.
+Email – Required 
+Phone – Required
+Salary_per_hour – Required
+
+6. You grocery store will be open every day for 10 hours. So you have a total of 70 hours. You will need a page to schedule this 70 hours across your cashiers.
+
+The page should list all your active cashiers and then you should select number of hours each employee should work in a week and then save it.
+
+7. Based on how many hours a cashier works in a week and his salary per hour information; calculate how much a cashier should get paid every two weeks.
+
+
