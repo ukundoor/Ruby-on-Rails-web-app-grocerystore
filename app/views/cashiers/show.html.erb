@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cashier.name %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @cashier.username %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @cashier.startdate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @cashier.enddate %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @cashier.dob %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @cashier.age %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @cashier.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @cashier.phone %>
+</p>
+
+<p>
+  <strong>Salaryperhour:</strong>
+  <%= @cashier.salaryperhour %>
+</p>
+
+<%= link_to 'Edit', edit_cashier_path(@cashier) %> |
+<%= link_to 'Back', cashiers_path %>

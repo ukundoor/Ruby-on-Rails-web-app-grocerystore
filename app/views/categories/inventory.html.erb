@@ -1,0 +1,29 @@
+<h1>Listing inventories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Products</th>
+      <th colspan="0"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= category.name %></td>
+        <% category.products.each do |product| %>
+		<td> 
+		
+		<%= product.name %>
+		<br> 
+		</td>
+		<% end %>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

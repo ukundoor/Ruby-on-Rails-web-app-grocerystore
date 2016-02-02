@@ -1,0 +1,41 @@
+<h1>Listing cashiers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Startdate</th>
+      <th>Enddate</th>
+      <th>Dob</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Salaryperhour</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cashiers.each do |cashier| %>
+      <tr>
+        <td><%= cashier.name %></td>
+        <td><%= cashier.username %></td>
+        <td><%= cashier.startdate %></td>
+        <td><%= cashier.enddate %></td>
+        <td><%= cashier.dob %></td>
+        <td><%= cashier.age %></td>
+        <td><%= cashier.email %></td>
+        <td><%= cashier.phone %></td>
+        <td><%= cashier.salaryperhour %></td>
+        <td><%= link_to 'Show', cashier %></td>
+        <td><%= link_to 'Edit', edit_cashier_path(cashier) %></td>
+        <td><%= link_to 'Destroy', cashier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cashier', new_cashier_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  username: MyString
+  startdate: 2016-01-30 16:18:15
+  enddate: 2016-01-30 16:18:15
+  dob: 2016-01-30
+  age: 1
+  email: MyString
+  phone: MyString
+  salaryperhour: 1.5
+
+two:
+  name: MyString
+  username: MyString
+  startdate: 2016-01-30 16:18:15
+  enddate: 2016-01-30 16:18:15
+  dob: 2016-01-30
+  age: 1
+  email: MyString
+  phone: MyString
+  salaryperhour: 1.5
